@@ -31,43 +31,29 @@
     ORACLE_PASSWORD=sua_senha
     ORACLE_CONNECTION_STRING=localhost:1521/XEPDB1
 
-##⚡ Como Executar
+## ⚡ Como Executar
     ```bash
     npm start
 
-##🌐 Endpoints
-Método	Endpoint	Descrição
-POST	/api/users	Cria novo usuário
-GET	/api/users	Lista usuários
+## 🌐 Endpoints
+- POST	/api/users	Cria novo usuário
+- GET	/api/users	Lista usuários
 
-##🔍 Testando
+## 🔍 Testando
     ```bash
     # Criar usuário
     curl -X POST http://localhost:3000/api/users \
     -H "Content-Type: application/json" \
     -d '{"name":"Exemplo","email":"exemplo@teste.com"}'
 
+    ```bash
     # Listar usuários
     curl http://localhost:3000/api/users
 
 
-🏗️ Estrutura
-projeto-oracle/
-├── app.js
-├── config/
-│   └── db_oracle.js
-├── controllers/
-│   └── userController.js
-├── models/
-│   └── userModel_oracle.js
-├── routes/
-│   └── userRoutes.js
-└── package.json
+## 🚨 Solução de Problemas
+- Erro de conexão: Verifique se o Oracle está rodando (services.msc)
 
+- Variáveis incorretas: Confira o arquivo .env
 
-🚨 Solução de Problemas
-Erro de conexão: Verifique se o Oracle está rodando (services.msc)
-
-Variáveis incorretas: Confira o arquivo .env
-
-Porta ocupada: Altere a porta no app.js
+- Porta ocupada: Altere a porta no app.js
