@@ -1,0 +1,54 @@
+# Arquivo .gitignore para Node.js + Oracle
+
+# Dependências do Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Variáveis de ambiente
+#.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Configurações do IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs e relatórios
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de build/dist
+dist/
+build/
+out/
+.coverage/
+
+# Configurações do Oracle
+wallet/
+tnsnames.ora
+sqlnet.ora
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Cache
+.cache/
+.temp/
